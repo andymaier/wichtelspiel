@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wichtelspiel</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="headerBar">
+        <h1>Wichtelspiel</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="box" id="giftBox">
+            <h2>Geschenk</h2>
+            <label for="giftName">Name:</label>
+            <input type="text" id="giftName" placeholder="Geschenkname">
+
+            <label for="giftPrice">Preis:</label>
+            <input type="text" id="giftPrice" placeholder="Preis">
+
+            <label for="giftType">Typ:</label>
+            <select id="giftType">
+                <option value="Elektronik">Elektronik</option>
+                <option value="Buch">Buch</option>
+                <option value="Kleidung">Kleidung</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Kunst">Kunst</option>
+            </select>
+            <button onclick="addGift()">Geschenk hinzufügen</button>
+        </div>
+
+        <div class="box" id="playerBox">
+            <h2>Spieler</h2>
+            <div id="players">
+                <!-- Spieler werden dynamisch hinzugefügt -->
+            </div>
+            <button onclick="addPlayer()">Spieler hinzufügen</button>
+        </div>
+    </div>
+
+    <div class="game-board" id="gameBoard">
+        <!-- Hier wird der Tisch und die Spieler-Anzeige platziert -->
+    </div>
+
+    <script src="main.js"></script>
+</div>
+
+</body>
+</html>
